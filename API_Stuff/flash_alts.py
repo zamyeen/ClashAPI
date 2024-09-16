@@ -97,7 +97,7 @@ def get_all_equip(accountName):
     except Exception as e:
         print(f"An error occurred: {str(e)}")
 
-def get_equips(accountNames):
+def get_all_equips_csv(accountNames):
     # Ensure the OutputCSV directory exists
     os.makedirs('OutputCSV', exist_ok=True)
     
@@ -164,4 +164,4 @@ get_equip("XLR8")
 # print("Getting Equipment Levels Combined")
 # # Example usage:
 # account_names = ["XS", "Zoom", "Impulse", "XLR8"]
-# get_equips(account_names)
+# get_all_equips_csv(account_names)
